@@ -1,4 +1,5 @@
 ---
+slug: "/first-post" 
 title: That first time
 date: '2019-03-05'
 ---

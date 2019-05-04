@@ -1,0 +1,16 @@
+backend:
+  name: github
+  branch: master
+  repo: gabrilator/meetup_test
+media_folder: static/uploads
+public_folder: /img
+collections:
+  - name: "meetups"
+    label: "Meetup"
+    folder: "src/meetups"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Meetup", name: "title", widget: "string", required: true}
+      - { label: "Meetup date", name: "date", widget: "date" }
+      - { label: "Meetup description", name: "description", widget: "markdown"  }
