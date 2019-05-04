@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Barcelona Edition`,
     description: `This is only the beginning! `,
-    author: `@gabri`,
-    place: 'Barcelona'
+    place: 'Barcelona',
+    author: `@Gab`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -37,8 +37,6 @@ module.exports = {
     },
     'gatsby-transformer-remark',
     `gatsby-plugin-styled-components`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`, // make sure to put last in the array
