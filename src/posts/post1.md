@@ -1,7 +1,6 @@
 ---
-slug: "/first-post" 
-title: "Our first Post" 
-date: "2019-03-05"
+title: That first time
+date: '2019-03-05'
 ---
 
 # Barna rocks
