@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
 import Header from "./header"
-import Archive from "./archive"
 import "./layout.css"
 
 const Layout = ({ children }) => (
@@ -19,7 +18,7 @@ const Layout = ({ children }) => (
         }
         file(relativePath: {regex: "/back/"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxHeight: 500) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
@@ -39,7 +38,6 @@ const Layout = ({ children }) => (
         >
           <Img fluid= {data.file.childImageSharp.fluid}/>
           <main>{children}</main>
-          <Archive/>
 
           <footer>
             © {new Date().getFullYear()}, Built with
