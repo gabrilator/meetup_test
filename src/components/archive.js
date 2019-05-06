@@ -16,16 +16,13 @@ const Post = styled.article`
 
 const POST_ARCHIVE_QUERY =  graphql`
 query BlogInfo {
-allMarkdownRemark (limit: 5, sort:{
-  fields:[frontmatter___date],
-  order:DESC
-}) {
+allMarkdownRemark  {
  edges {
    node {
      excerpt(pruneLength:150)
      frontmatter {
        title
-       date (formatString:"MMMM DD, YYYY")
+       date 
        slug
      }
    }
