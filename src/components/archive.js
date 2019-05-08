@@ -37,9 +37,11 @@ const Archive = () => (
    <div>
     <h3> Archive </h3>
     {data.allMarkdownRemark.edges.map ((edge)=> (
-      <div >
-        
-      </div>
+      <Post >
+        <h4> {edge.node.frontmatter.title}</h4>
+        <p> {edge.node.excerpt}</p>
+        <Link to = {`/posts${edge.node.frontmatter.slug}` }>Read More... </Link>
+      </Post>
     ))}
   </div>
  )}
