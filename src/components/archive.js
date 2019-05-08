@@ -35,7 +35,12 @@ const Archive = () => (
  query = {POST_ARCHIVE_QUERY}
  render= {data=>(
    <div>
-   
+    <h3> Archive </h3>
+    {data.allMarkdownRemark.edges.map ((edge)=> (
+      <div >
+        
+      </div>
+    ))}
   </div>
  )}
  
