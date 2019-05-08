@@ -37,9 +37,9 @@ const Archive = () => (
    <div>
     <h3> Archive </h3>
     {data.allMarkdownRemark.edges.map ((edge)=> (
-      <Post >
+      <div >
         
-      </Post>
+      </div>
     ))}
   </div>
  )}
