@@ -9,9 +9,9 @@ import { graphql } from "gatsby"
 
 class postLayout extends Component {
     render() {
+        const {markdownRemark}= this.props.data;
         return (
             <Layout>
-                
             </Layout>
         );
     }
